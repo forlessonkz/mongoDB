@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs', {pageTitle: 'Products'}) %>
+<body>
+    <h1> Products</h1>
+    <ul class="products-list">
+        <% data.forEach(item => { %>
+            <li><%= item.type%> <%= item.title%> <%= item.brand%> <%= item.model%></li>
+        <% }) %>
+    </ul>
+</body>
+</html>

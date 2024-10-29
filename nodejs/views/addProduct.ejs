@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs', {pageTitle: 'New Product'}) %>
+<body>
+    <h1> Add new product</h1>
+    <form action="/new" method="POST">
+        <input type="text" placeholder="Products type" name="type">
+        <input type="text" placeholder="Title" name="title">
+        <input type="text" placeholder="Brand" name="brand">
+        <input type="text" placeholder="Model" name="model">
+        <input type="number" placeholder="Price" name="price">
+        <button type="submit">Save new product</button>
+    </form>
+</body>
+</html>
